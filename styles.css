@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@font-face {
+  font-family: digital-7;
+  src: url(/fonts/digital-7.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #baf7e4;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.calculator .input-row {
+  position: relative;
+}
+
+.calculator .input-row span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 1em;
+  font-family: "digital-7", sans-serif;
+  font-size: 24px;
+}
+
+.calculator .input-row input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 3em;
+  text-align: right;
+  padding-top: 0.8em;
+  background-color: #cef1cf;
+  border: none;
+  font-family: "digital-7", sans-serif;
+}
+
+.calculator .buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calculator .buttons button,
+#show-history {
+  position: relative;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 2em;
+  border: none;
+  background-color: #413d3e;
+  border: 1px solid #cef1cf;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: rgb(42, 212, 138);
+}
+
+.calculator .buttons button:hover,
+#show-history:hover {
+  background-color: #222222;
+  color: rgb(42, 212, 138);
+}
+.calculator .buttons button:active,
+#show-history:active {
+  background-color: #413d3e;
+  color: rgb(42, 212, 138);
+}
+
+#show-history {
+  font-size: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+#isvalyti {
+  font-size: 1em;
+}
+.bi-backspace {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: 25px;
+  right: 35px;
+}
+.history .history-items {
+  font-family: "digital-7", sans-serif;
+  font-size: 1.5em;
+background-color: #cef1cf;;
+
+}
+.history .history-items p {
+    margin: 0;
+    padding: 5px;
+    
+}
